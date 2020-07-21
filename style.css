@@ -11,6 +11,7 @@ Tags: RUZ ESTUDIO, lading page, illustration, motion graphic, Estudio de diseño
 	--bg-darker-color:#EFEFEF;
 	--yellow-color:#C49F35;
 	--obscure-color:#60414F;
+	--detail-color:#9F8099;
 }
 
 * {margin:0;padding:0;box-sizing:border-box;}
@@ -32,8 +33,41 @@ body {
 }
 
 header {
+	position:relative;
 	display:block;
 	padding:20px 100px;
+}
+
+header #tinyletter {
+	position:relative;
+	display:inline-block;
+	width:300px;
+	height:25px;
+	padding:5px;
+	border:01px solid var(--detail-color);
+	border-radius: 10px;
+	color:var(--obscure-color);
+	background-color:var(--bg-color);
+}
+#tiny-btn {
+	position:absolute;
+	right:6rem;
+	display:inline-block;
+	width:60px;
+	height:25px;
+	padding:4px;
+	border-radius:10px;
+	border:none;
+	background-color:var(--detail-color);
+	color:white;
+	text-align:center;
+	font-size:12px;
+	cursor:pointer;
+	transition: .3s ease-out;
+}
+
+#tiny-btn:hover {
+	background-color:var(--obscure-color);
 }
 
 main {
@@ -44,11 +78,14 @@ main {
 	padding:10px 100px;
 }
 
-#illustration img {
-	width:100%;
-	height:auto;
+#content {
+	padding:0;
 }
 
+.title-color {
+	color:var(--obscure-color);
+	font-weight: 700;
+}
 #title {
 	font-size:40px;
 }
@@ -62,17 +99,202 @@ main {
 	border-radius: 40px;
 	background-color:var(--yellow-color);
 }
+#cta-text {
+	margin:10px 0px 0px 0px;
+	font-size:19px;
+}
+
+.btn {
+	display:block;
+	width:155px;
+	height:40px;
+	padding:8px;
+	border-radius: 25px;
+	color:white;
+	text-align: center;
+	text-decoration:none;
+	transition:.3s ease-out;
+}
+
+#btn-etsy {
+	font-size:15px;
+	margin:10px 0px;
+	background-color:var(--yellow-color);
+}
+
+#btn-etsy:hover {
+	background-color:var(--detail-color);
+}
+
+#services {
+	margin:20px 0px 0px 0px;
+}
+
+#services ul{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	align-items:start;
+	list-style-type: none;
+}
+
+#services ul li {
+	display:inline-block;
+	width:80px;
+	height:80px;
+	text-align:center;
+	padding:10px;
+	margin:0px 10px;
+}
+
+#services ul li img {
+	transition:.3s ease-out;
+	cursor:pointer;
+}
+
+#services ul li img:hover {
+	transform:scale(1.09) rotateX(-25deg);
+	-o-transform: scale(1.09) rotateX(-25deg);
+	-moz-transform:scale(1.09) rotatez(-25deg) ;
+	-webkit-transform: scale(1.09) rotatez(-25deg);
+}
+
+#services ul li p {
+	margin-top:10px;
+	font-size:12px;
+}
+
+#services ul li p:before {
+	content:"";
+	display:block;
+	height:1px;
+	width:40px;
+	margin:5px auto;
+
+	background-color:var(--detail-color);
+}
+
+
+#illustration {
+	justify-content: flex-end;
+}
+
+#logo-decor {
+	position:absolute;
+	right: 0;
+	bottom:3.6rem;
+	z-index:-1;
+	width:200px;
+	height: auto;
+}
+
+#illustration img {
+	max-width:100%;
+	height:auto;
+}
+
+#shine1 {
+	position:absolute;
+	top:0;
+	right:40em;
+	-o-animation-name: shine-1;
+	-moz-animation-name:shine-1;
+	-webkit-animation-name:shine-1;
+	animation-name:shine-1;
+	animation-duration: 3s;
+	-o-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-webkit-animation-duration:3s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+#shine2 {
+	position:absolute;
+	top:20em;
+	right:25em;
+	-o-animation-name: shine-2;
+	-moz-animation-name:shine-2;
+	-webkit-animation-name:shine-2;
+	animation-name:shine-2;
+	animation-duration: 3s;
+	-o-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-webkit-animation-duration:3s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+#shine3 {
+	position:absolute;
+	bottom:5em;
+	right:40em;
+	-o-animation-name: shine-3;
+	-moz-animation-name:shine-3;
+	-webkit-animation-name:shine-3;
+	animation-name:shine-3;
+	animation-duration: 3s;
+	-o-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-webkit-animation-duration:3s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+#shine4 {
+	position:absolute;
+	bottom:5em;
+	right:5em;
+	-o-animation-name: shine-4;
+	-moz-animation-name:shine-4;
+	-webkit-animation-name:shine-4;
+	animation-name:shine-4;
+	animation-duration: 3s;
+	-o-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-webkit-animation-duration:3s;
+	animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	-o-animation-timing-function: ease-out;
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+
+
+.p-color {
+	color:grey;
+}
 
 .flexbox-row {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items:center;
 }
 
 .flexbox-column {
 	display:flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .grid {
@@ -80,20 +302,40 @@ main {
 }
 
 .basic-grid {
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1.5fr 2fr;
 	grid-row: 1fr;
 }
 
-.title-color {
-	color:var(--obscure-color);
-	font-weight: 700;
+footer {
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+	align-content: center;
+	max-width:100%;
+	height:auto;
+	padding:40px 0px 30px 0px;
+	background-color:var(--bg-darker-color);
 }
 
+footer a {
 
+	display:block;
+	width:30px;
+	height: 30px;
+	padding:3px;
+	margin:0px 10px;
+	border:1px solid var(--detail-color);
+	border-radius:15px;
+	color:var(--obscure-color);
 
-#logo-decor {
-	position:absolute;
-	right: 0;
-	bottom:0;
-	z-index:-1;
+	font-size:15px;
+	text-align:center;
+}
+
+footer a:hover {
+	transform:scale(1.09) ;
+	-o-transform: scale(1.09);
+	-moz-transform:scale(1.09) ;
+	-webkit-transform: scale(1.09);
+}
 }
