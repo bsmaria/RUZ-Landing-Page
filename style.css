@@ -29,6 +29,10 @@ body {
 
 	/*text*/
 	font-family: 'Open Sans', sans-serif;
+
+	/*Other*/
+	overflow:hidden;
+	transition:.3 ease-out;
 }
 
 header {
@@ -74,7 +78,8 @@ main {
 
 	display:block;
 	width:100%;
-	padding:10px 100px;
+	height:auto;
+	padding:20px 100px;
 }
 
 #content {
@@ -94,7 +99,7 @@ main {
 	display:block;
 	width:60px;
 	height:5px;
-	margin:30px 0px 45px 0px;
+	margin:20px 0px 45px 0px;
 	border-radius: 40px;
 	background-color:var(--yellow-color);
 }
@@ -190,56 +195,62 @@ main {
 }
 
 #illustration img {
-	max-width:100%;
+	max-width:80%;
 	height:auto;
+}
+
+@keyframes shine-1 {
+	0% {transform:translateY(10px) scale(1.0);}
+	50% {transform:translateY(40px) scale(0.7);}
+	100%{transform:translateY(10px) scale(1.0);}
+}
+@keyframes shine-2 {
+	0% {transform:translateY(0px) scale(1.0);}
+	50% {transform:translateY(-40px) scale(1.2);}
+	100%{transform:translateY(0px) scale(1.0);}
+}
+@keyframes shine-3 {
+	0% {transform:translateY(10px) scale(1.0);}
+	50% {transform:translateY(40px) scale(0.7);}
+	100%{transform:translateY(10px) scale(1.0);}
+}
+@keyframes shine-4 {
+	0% {transform:translateY(10px);}
+	50% {transform:translateY(-20px);}
+	100%{transform:translateY(10px);}
 }
 
 #shine1 {
 	position:absolute;
 	top:0;
-	right:40em;
-	-o-animation-name: shine-1;
-	-moz-animation-name:shine-1;
+	right:28em;
 	-webkit-animation-name:shine-1;
 	animation-name:shine-1;
 	animation-duration: 3s;
-	-o-animation-duration:3s;
-	-moz-animation-duration:3s;
 	-webkit-animation-duration:3s;
 	animation-iteration-count: infinite;
-	-o-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 }
 #shine2 {
 	position:absolute;
 	top:20em;
-	right:25em;
-	-o-animation-name: shine-2;
-	-moz-animation-name:shine-2;
+	right:4em;
 	-webkit-animation-name:shine-2;
 	animation-name:shine-2;
 	animation-duration: 3s;
-	-o-animation-duration:3s;
-	-moz-animation-duration:3s;
 	-webkit-animation-duration:3s;
 	animation-iteration-count: infinite;
-	-o-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
+	animation-delay:.5s;
 }
 #shine3 {
 	position:absolute;
-	bottom:5em;
-	right:40em;
+	bottom:10em;
+	right:30em;
 	-webkit-animation-name:shine-3;
 	animation-name:shine-3;
 	animation-duration: 3s;
@@ -248,11 +259,12 @@ main {
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
+	animation-delay:.8s;
 }
 #shine4 {
 	position:absolute;
-	bottom:5em;
-	right:5em;
+	top:1.5em;
+	right:13em;
 	animation-name:shine-4;
 	-webkit-animation-name:shine-4;	
 	animation-duration: 3s;
@@ -263,6 +275,13 @@ main {
 	-webkit-animation-timing-function: ease-out;
 }
 
+#illustration:nth-child(3),
+#illustration:nth-child(4),
+#illustration:nth-child(5), 
+#illustration:nth-child(6) {
+	width:100%;
+	height:auto;
+}
 
 .p-color {
 	color:grey;
@@ -307,7 +326,7 @@ footer {
 	justify-content: center;
 	align-content: center;
 	max-width:100%;
-	height:auto;
+	height:100vh;
 	padding:40px 0px 30px 0px;
 	background-color:var(--bg-darker-color);
 }
@@ -333,9 +352,29 @@ footer a:hover {
 	-webkit-transform: scale(1.09);
 }
 
+@media (max-width:900px) {
+	header {
+		padding:20px 40px;}
+	main {
+		padding:20px 40px;
+		}
+	#tiny-btn {
+		position:absolute;
+		right:3em;}
+	}
+
 @media (max-width:640px){
 	header {
 		padding:20px 20px;
 	}
+	main {
+		padding:20px 20px;
+	}
+	header #tinyletter {
+		width:230px;
+		height:25px;}
+	#tiny-btn {
+		position:absolute;
+		right:1.5em;}
 }
 	
