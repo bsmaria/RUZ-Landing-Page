@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/60e003a5-0711-454e-830f-013f5c92f39b/deploy-status)](https://app.netlify.com/sites/ruzestudio-landing/deploys)
