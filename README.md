@@ -1,1 +1,1 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/60e003a5-0711-454e-830f-013f5c92f39b/deploy-status)](https://app.netlify.com/sites/ruzestudio-landing/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ac30726-a7f5-425b-8491-9005f880df8f/deploy-status)](https://app.netlify.com/sites/ruzestudio1/deploys)
