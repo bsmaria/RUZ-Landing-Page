@@ -6,7 +6,6 @@ Description: Landing page for RUZ ESTUDIO, a creative
 Tags: RUZ ESTUDIO, lading page, illustration, motion graphic, Estudio de diseño, RUZ, Graphic Design Studio
 */
 :root {
-	--transition-ease: 0.3s ease-in-out;
 	--bg-color:#F1F1F3;
 	--bg-darker-color:#EFEFEF;
 	--yellow-color:#C49F35;
@@ -23,7 +22,7 @@ body {
 	/*Display & Box Model*/
 	display:block;
 	max-width:100%;
-	padding:1rem;
+	padding:1em;
 
 	/*color*/
 	background-color:var(--bg-color);
@@ -51,7 +50,7 @@ header #tinyletter {
 }
 #tiny-btn {
 	position:absolute;
-	right:6rem;
+	right:6em;
 	display:inline-block;
 	width:60px;
 	height:25px;
@@ -131,6 +130,9 @@ main {
 }
 
 #services ul{
+	display: -webkit-box; 
+ 	display: -ms-flexbox; 
+  	display: -webkit-flex;
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
@@ -154,8 +156,7 @@ main {
 
 #services ul li img:hover {
 	transform:scale(1.09) rotateX(-25deg);
-	-o-transform: scale(1.09) rotateX(-25deg);
-	-moz-transform:scale(1.09) rotatez(-25deg) ;
+	-ms-transform:scale(1.09) rotatez(-25deg) ;
 	-webkit-transform: scale(1.09) rotatez(-25deg);
 }
 
@@ -182,7 +183,7 @@ main {
 #logo-decor {
 	position:absolute;
 	right: 0;
-	bottom:3.6rem;
+	bottom:3.6em;
 	z-index:-1;
 	width:200px;
 	height: auto;
@@ -239,42 +240,26 @@ main {
 	position:absolute;
 	bottom:5em;
 	right:40em;
-	-o-animation-name: shine-3;
-	-moz-animation-name:shine-3;
 	-webkit-animation-name:shine-3;
 	animation-name:shine-3;
 	animation-duration: 3s;
-	-o-animation-duration:3s;
-	-moz-animation-duration:3s;
 	-webkit-animation-duration:3s;
 	animation-iteration-count: infinite;
-	-o-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 }
 #shine4 {
 	position:absolute;
 	bottom:5em;
 	right:5em;
-	-o-animation-name: shine-4;
-	-moz-animation-name:shine-4;
-	-webkit-animation-name:shine-4;
 	animation-name:shine-4;
+	-webkit-animation-name:shine-4;	
 	animation-duration: 3s;
-	-o-animation-duration:3s;
-	-moz-animation-duration:3s;
 	-webkit-animation-duration:3s;
 	animation-iteration-count: infinite;
-	-o-animation-iteration-count: infinite;
-	-moz-animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
-	-o-animation-timing-function: ease-out;
-	-moz-animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
 }
 
@@ -284,6 +269,9 @@ main {
 }
 
 .flexbox-row {
+	display: -webkit-box; 
+ 	display: -ms-flexbox; 
+  	display: -webkit-flex;
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -291,6 +279,9 @@ main {
 }
 
 .flexbox-column {
+	display: -webkit-box; 
+ 	display: -ms-flexbox; 
+  	display: -webkit-flex;
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -298,6 +289,7 @@ main {
 }
 
 .grid {
+	display: -ms-grid;
 	display:grid;
 }
 
@@ -307,6 +299,9 @@ main {
 }
 
 footer {
+	display: -webkit-box; 
+ 	display: -ms-flexbox; 
+  	display: -webkit-flex;
 	display:flex;
 	flex-direction:row;
 	justify-content: center;
@@ -334,8 +329,13 @@ footer a {
 
 footer a:hover {
 	transform:scale(1.09) ;
-	-o-transform: scale(1.09);
-	-moz-transform:scale(1.09) ;
+	-ms-transform:scale(1.09) ;
 	-webkit-transform: scale(1.09);
 }
+
+@media (max-width:640px){
+	header {
+		padding:20px 20px;
+	}
 }
+	
