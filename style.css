@@ -36,7 +36,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 
 	/*Other*/
-	/* overflow:hidden; */
+	overflow:hidden;
 	/* <----- probar ccon y sin el overflow hidden */
 	transition: .3 ease-out;
 }
